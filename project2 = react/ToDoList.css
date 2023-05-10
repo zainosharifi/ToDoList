@@ -1,0 +1,158 @@
+.container > h1 {
+  background-color: rgb(255, 176, 30);
+  margin-top: 0;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid black;
+}
+.container > .form {
+  border: 1px solid black;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.container > .form > .input {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+.container > .form > .input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.container > .form > .add-btn:focus {
+  border: none;
+  outline: none;
+}
+.container > .form > .add-btn {
+  border: none;
+  color: orange;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.container > .form > .add-btn:hover {
+  background-color: orange;
+  color: black;
+}
+.container > .form > .warning {
+  color: red;
+}
+.out-puts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  width: 67%;
+  text-align: center;
+  margin-left: auto;
+  background-color: rgb(255, 166, 0);
+  margin-right: auto;
+  padding-right: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.container > .out-puts > .delete-btn {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: auto;
+}
+.container > .out-puts > .edit-btn {
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: -80%;
+}
+.container > .out-puts > .tasks {
+  margin-left: 0px;
+  margin-right: 3%;
+} 
+
+@media (max-width: 850px) {
+  .container > h1 {
+    font-size: 35px;
+  }
+  .container > .form {
+    border: 2px solid black;
+  }
+  .container > .form > .input {
+    font-size: 20px;
+    border-bottom: 2px solid black;
+  }
+  .container >.form > .add-btn {
+    font-size: 20px;
+
+  }
+  .container > .form > .warning {
+    font-size: 20px;
+  }
+  .out-puts > .tasks {
+      font-size: 20px;
+  }
+  .container > .out-puts > .edit-btn {
+    font-size: 25px;
+  }
+  .container > .out-puts > .delete-btn {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 413px) {
+  .container > .out-puts > .delete-btn {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .container > .out-puts > .edit-btn {
+    font-size: 15px;
+  }
+  .out-puts {
+    border: 1px solid black;
+  }
+}
+@media (max-width: 400px) {
+  .container > h1 {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+  .container > .form > .add-btn {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: rgb(239, 155, 0);
+  }
+  .container > .form {
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+  .container > .form > .input {
+    font-size: 13px;
+  }
+
+  .out-puts {
+    border: 1px solid black;
+
+  }
+  .container > .out-puts > .delete-btn {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .container > .out-puts > .edit-btn {
+    font-size: 12px;
+  }
+  .container > .out-puts > .tasks {
+    font-size: 12px;
+  } 
+}
